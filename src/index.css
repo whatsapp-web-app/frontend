@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    --color-primary: 10 36 99;
+    --color-secondary: 62 146 204;
+    --color-tertiary: 255 250 255;
+    --color-quaternary: 216 49 91;
+  }
+
+  html {
+    --font-family: "Roboto", sans-serif;
+  }
+
+  *{
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.btn {
+  @apply text-white font-bold py-2 px-4 rounded  uppercase tracking-wider;
+}
+
+.btn-primary {
+  @apply bg-primary hover:opacity-95;
+}
